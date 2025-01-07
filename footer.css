@@ -1,0 +1,31 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and layout styling */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    font-family: Arial, sans-serif;
+}
+
+/* Main content styling */
+.content {
+    flex: 1; /* This makes content take available space */
+    padding: 20px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

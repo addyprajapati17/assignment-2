@@ -1,0 +1,33 @@
+
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="grid.css">
+  <title>Simple Grid Layout</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .grid-item {
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">Box 1</div>
+    <div class="grid-item">Box 2</div>
+    <div class="grid-item">Box 3</div>
+    <div class="grid-item">Box 4</div>
+    <div class="grid-item">Box 5</div>
+    <div class="grid-item">Box 6</div>
+  </div>
+</body>
+</html>

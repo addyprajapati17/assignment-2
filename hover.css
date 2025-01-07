@@ -1,0 +1,71 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Grid container for video cards */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Creates a responsive grid */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Video card styling */
+.video-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+/* Video card hover effect */
+.video-card:hover {
+    transform: translateY(-10px); /* Moves the card up */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+/* Thumbnail image styling */
+.video-thumbnail {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Video info section */
+.video-info {
+    padding: 10px;
+}
+
+/* Video title styling */
+.video-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+/* Channel name styling */
+.video-channel {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Video stats styling (views and upload date) */
+.video-stats {
+    font-size: 12px;
+    color: #888;
+}
